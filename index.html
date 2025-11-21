@@ -1,41 +1,116 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>my self</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="Riyou Reaper.jpg">
-<style>
-body{
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(#EE5921,#FFA600);
-    text-align: center;
-    font-family: arial, sans-serif;
-}
-.circle{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-h1{
-    color: aliceblue;
-}
-</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>my self</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Riyou Reaper.jpg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#c9620e, #FFA600);
+            text-align: center;
+            font-family: arial, sans-serif;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: aliceblue;
+        }
+
+        .gradist-test {
+            font-size: 27px;
+            
+            background: linear-gradient(90deg, #111010, #61616e);
+            
+            background-size: 800% 800%;
+
+            -webkit-background-clip: text;
+            
+            -webkit-text-fill-color: transparent;
+            
+            animation: gradientMove 5s ease infinite;
+
+        }
+        .gradist-test2 {
+            font-size: 27px;
+            
+            background: linear-gradient(90deg, #be0a0a, #ddb608);
+            
+            background-size: 800% 800%;
+
+            -webkit-background-clip: text;
+            
+            -webkit-text-fill-color: transparent;
+            
+            animation: gradientMove 5s ease infinite;
+
+        }
+        .gradist-test3 {
+            font-size: 27px;
+            
+            background: linear-gradient(90deg, #f70000, #0e62d1);
+            
+            background-size: 800% 800%;
+
+            -webkit-background-clip: text;
+            
+            -webkit-text-fill-color: transparent;
+
+            animation: gradientMove 5s ease infinite;
+            
+
+        }
+        @keyframes gradientMove {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+    </style>
 
 </head>
+
 <body align="right" style="text-align: center;">
-<br>
+    <br>
     <h1>My accounts</h1>
     <img src="♡ shinobu.jpg" class="circle">
     <br><br>
-            <a href="https://www.instagram.com/j_h_s_o_?igsh=aHQ1cGV1M3NzcWtl"><h2>my account in insta</h2></a> 
-            <br><br>
-            <a href="https://x.com/GuramGurem?t=ITLaOi60srNZGGXL-XyKVw&s=09"><h2>my account in twittr/x</h2></a>
-            <br><br> 
-            <a href="https://www.tiktok.com/@gurngurem?_r=1&_t=ZM-91X5N6ZoaUO"><h2>my account in tik tok</h2></a> 
-    </body>
+    <a href="https://www.instagram.com/j_h_s_o_?igsh=aHQ1cGV1M3NzcWtl">
+        <h2 class="gradist-test2">my account in insta <img src="logo insta.jpg" class="icon"></h2>
+    </a>
+    <br><br>
+    <a href="https://x.com/GuramGurem?t=ITLaOi60srNZGGXL-XyKVw&s=09">
+        <h2 class="gradist-test">my account in twittr/x <img src="Logo X.jpg" class="icon"></h2>
+    </a>
+    <br><br>
+    <a href="https://www.tiktok.com/@gurngurem?_r=1&_t=ZM-91X5N6ZoaUO">
+        <h2 class="gradist-test3">my account in tik tok <img src="logo tik tok.jpg" class="icon"></h2>
+    </a>
+
+    <audio id="bgMusic" src="Ava Max  Choose Your Fighter Lyrics.mp3" loop></audio>
+
+    <button id="playBtn"></button>
+
+    <script>
+        const music = document.getElementById("bgMusic");
+        const button = document.getElementById("playBtn");
+
+        button.onclick = () => {
+            music.play();
+            button.style.display = "none";
+        };
+    </script>
+
+</body>
+
 </html>
