@@ -1,11 +1,11 @@
 body {
-    
+
     text-align: center;
-    
+
     margin: 0;
-    
+
     padding: 0;
-    
+
     font-family: Arial;
 
     background: linear-gradient(to bottom, #EE5921, #FFA600);
@@ -49,4 +49,28 @@ a:hover {
     height: 30px;
     vertical-align: middle;
 
+}
+
+div {
+    height: 750px;
+    background-image: url(desktopshen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+a {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
