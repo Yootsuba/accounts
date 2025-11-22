@@ -50,3 +50,19 @@ a:hover {
     vertical-align: middle;
 
 }
+a{
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 3s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
